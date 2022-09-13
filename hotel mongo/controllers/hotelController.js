@@ -16,7 +16,8 @@ const addHotel = async(req, res) => {
         description: req.body.description,
         rating: req.body.rating,
         address: req.body.address,
-        contact: req.body.contact
+        contact: req.body.contact,
+        email: req.body.email
     };
     try {
         const product = await Hotels.create(hotelInfo);
